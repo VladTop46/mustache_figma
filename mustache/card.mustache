@@ -1,0 +1,15 @@
+<div class="services__card card">
+    {{#image}}
+    <div class="card__img">
+        <img src="/assets/img/{{.}}" alt="{{title}}" />
+    </div>
+    {{/image}}
+    {{^image}}
+    <div class="card__stub">Изображения нет</div>
+    {{/image}}
+    <h3 class="card__title">{{title}}</h3>
+    <div class="card__price">
+        Service cost: <span>{{price}}</span>
+    </div>
+    <a class="card__link" href="#">Book online ></a>
+</div>
